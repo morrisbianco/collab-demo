@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Home Page</title>
+</head>
+<body>
+    <main class="Center text">    
+          <div class="card">
+            <h3 class="card-header text-uppercase">Search Library of congress</h3>
+            <form id="user-form" class="card-body">
+              <label class="form-label" id="results">Search</label>
+              <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+              <select>
+                  <option>photo</option>
+                  <option>audio</option>
+                  <option>video</option>
+                  <option>documents</option>
+            </select>
+              <button type="submit" class="btn" onclick="searchBtn(event)">Get results</button>
+            </form>
+          </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
